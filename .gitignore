@@ -1,0 +1,15 @@
+# 诊断/调试临时文件（不部署）
+_diag.html
+_diag2.html
+_analyze.js
+_click_test.html
+.diag.js
+
+# 工作区元数据与过程文件
+.wpscomate/
+.scratch/
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+*.log

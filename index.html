@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人收藏馆 · 游戏 / 影视 / 小说 / 音乐 / 书籍</title>
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="app">
+  <!-- 侧边导航 -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">馆</div>
+      <div class="brand-text">
+        <b>个人收藏馆</b>
+        <span>My Private Museum</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-item" href="#/" data-nav="home"><span class="ni">⌂</span>总览</a>
+      <div class="nav-group-title">分类馆</div>
+      <a class="nav-item" href="#/c/games"   data-nav="games"><span class="ni">🎮</span>游戏<span class="cnt" data-cnt="games"></span></a>
+      <a class="nav-item" href="#/c/videos"  data-nav="videos"><span class="ni">🎬</span>故事影视<span class="cnt" data-cnt="videos"></span></a>
+      <a class="nav-item" href="#/c/novels"  data-nav="novels"><span class="ni">📖</span>故事小说<span class="cnt" data-cnt="novels"></span></a>
+      <a class="nav-item" href="#/c/music"   data-nav="music"><span class="ni">🎵</span>音乐<span class="cnt" data-cnt="music"></span></a>
+      <a class="nav-item" href="#/c/books"   data-nav="books"><span class="ni">📚</span>书籍<span class="cnt" data-cnt="books"></span></a>
+      <div class="nav-group-title">工具</div>
+      <a class="nav-item" href="#/platforms" data-nav="platforms"><span class="ni">🧭</span>平台与获取方式</a>
+      <a class="nav-item" href="#/favorites" data-nav="favorites"><span class="ni">★</span>我的收藏<span class="cnt" data-cnt="fav"></span></a>
+      <a class="nav-item" href="#/manage"    data-nav="manage"><span class="ni">⚙</span>数据管理</a>
+      <a class="nav-item" href="#/about"     data-nav="about"><span class="ni">ℹ</span>使用说明</a>
+    </nav>
+
+    <div class="sidebar-foot">
+      <div class="stat-mini" id="statMini">—</div>
+      <button class="btn tiny ghost" id="btnQuickAdd">＋ 新增条目</button>
+    </div>
+  </aside>
+
+  <!-- 主体 -->
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn" id="btnMenu" title="菜单">☰</button>
+      <div class="search-wrap">
+        <input type="search" id="globalSearch" placeholder="全站搜索：名称 / 原名 / 标签 / 简介…（按 Enter 在当前分类内搜索）">
+        <button class="icon-btn" id="btnSearchGo" title="搜索">⌕</button>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn ghost" id="btnFavOnly" title="只看收藏">★ 收藏</button>
+      </div>
+    </header>
+    <div class="view" id="view"></div>
+    <footer class="foot">
+      <span>纯本地静态站点 · 数据保存在你自己的浏览器里 · 不含任何实际内容文件</span>
+      <span id="footBuild"></span>
+    </footer>
+  </main>
+</div>
+
+<!-- 详情弹层 -->
+<div class="modal-mask" id="modalMask" hidden>
+  <div class="modal" id="modalBox">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<!-- 数据：分类配置 + 各馆条目 + 平台资源 -->
+<script src="assets/js/data/categories.js"></script>
+<script src="assets/js/data/games.js"></script>
+<script src="assets/js/data/videos.js"></script>
+<script src="assets/js/data/videos2.js"></script>
+<script src="assets/js/data/videos3.js"></script>
+<script src="assets/js/data/videos4.js"></script>
+<script src="assets/js/data/videos5.js"></script>
+<script src="assets/js/data/novels.js"></script>
+<script src="assets/js/data/music.js"></script>
+<script src="assets/js/data/music2.js"></script>
+<script src="assets/js/data/music3.js"></script>
+<script src="assets/js/data/music4.js"></script>
+<script src="assets/js/data/music5.js"></script>
+<script src="assets/js/data/music6.js"></script>
+<script src="assets/js/data/music7.js"></script>
+<script src="assets/js/data/books.js"></script>
+  <script src="assets/js/data/books2.js"></script>
+<script src="assets/js/data/platforms.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
